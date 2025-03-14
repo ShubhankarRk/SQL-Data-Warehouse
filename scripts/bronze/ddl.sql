@@ -12,13 +12,13 @@ Script Purpose:
 DROP TABLE IF EXISTS bronze.crm_cust_info;
 
 CREATE TABLE bronze.crm_prd_info (
-    prd_id       INT,
-    prd_key      VARCHAR(50),
-    prd_nm       VARCHAR(50),
-    prd_cost     INT,
-    prd_line     VARCHAR(50),
-    prd_start_dt TIMESTAMP,
-    prd_end_dt   TIMESTAMP
+    cst_id              INT,
+    cst_key             NVARCHAR(50),
+    cst_firstname       NVARCHAR(50),
+    cst_lastname        NVARCHAR(50),
+    cst_marital_status  NVARCHAR(50),
+    cst_gndr            NVARCHAR(50),
+    cst_create_date     DATE
 );
 
 DROP TABLE IF EXISTS bronze.crm_prd_info;
